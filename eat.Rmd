@@ -36,6 +36,14 @@ mydata <- select(GSS,race,age,eatout)
 mydata <- na.omit(mydata)
 ```
 
+# Graphical Results   
+
+```{r}
+barchartGC(~race + eatout,data=mydata)
+barchartGC(~race + eatout,data=mydata, type="percent")
+```
+
+There exists a noticeable contrast in the dining-out habits between the white population and other racial groups, as indicated by the percentage-based graphical data. Nevertheless, when examining the non-percentage data, it becomes evident that the sample size for non-white racial groups is considerably smaller compared to that of the white population.   
 
 
 
