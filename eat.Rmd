@@ -45,6 +45,15 @@ barchartGC(~race + eatout,data=mydata, type="percent")
 
 There exists a noticeable contrast in the dining-out habits between the white population and other racial groups, as indicated by the percentage-based graphical data. Nevertheless, when examining the non-percentage data, it becomes evident that the sample size for non-white racial groups is considerably smaller compared to that of the white population.   
 
+# Numerical Results   
+
+```{r}
+table1 <- xtabs(~race + eatout, data=mydata)
+rowPerc(table1)
+colPerc(table1)
+```   
+
+The numerical data findings validate the observations made in the graphical data, indicating a substantial percentage (less than 10%) difference in dining out habits between individuals of black ethnicity and those of white/other races. Nevertheless, the considerable proportion of the overall population that falls into the categories of either eating out or refraining from it, among whites, underscores the significantly larger sample size of the white racial group compared to the other two racial categories.   
 
 
 
