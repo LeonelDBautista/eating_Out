@@ -69,8 +69,9 @@ fisherXY(mydata$race,mydata$eatout,printAll=TRUE,confL = 0.99)
 
 We observe that the critical p-value was situated in the context of the relationship between the black and white races. We displayed all the p-values associated with the various combinations, and this reveals that the sole distinction is found within the "black" and "white" factors.   
 
+# Discussion and Conclusion
 
-
+Based on the culmination of the data, it is evident that there exists a discernible distinction within the data set. Consequently, we are inclined to reject the null hypothesis ($H_0$), signifying a statistically significant variance in the data. Both the visual representations and numerical analyses concur in demonstrating that the "white" factor exhibits a higher frequency of occurrence compared to other factors. When considering a 99% confidence interval, the critical p-value only detects a disparity in the relationship between the "black" and "white" factors. The likelihood of this occurrence being purely coincidental stands at 2.2 to 1 odds. Furthermore, the data sets size is substantial enough to reasonably exclude the possibility that these findings are a result of sampling error or a small sample size.   
 
 
 
