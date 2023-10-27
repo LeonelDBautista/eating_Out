@@ -55,6 +55,20 @@ colPerc(table1)
 
 The numerical data findings validate the observations made in the graphical data, indicating a substantial percentage (less than 10%) difference in dining out habits between individuals of black ethnicity and those of white/other races. Nevertheless, the considerable proportion of the overall population that falls into the categories of either eating out or refraining from it, among whites, underscores the significantly larger sample size of the white racial group compared to the other two racial categories.   
 
+# Inferential Results   
+
+```{r}
+chisqtestGC(table1)
+```   
+
+The outcome of the chi-squared test indicates that we possess a chi-squared statistic significantly exceeding the 2 degrees of freedom provided by the data. Moreover, a critical p-value is indeed present in the data. There exists a distinction within the dataset.   
+
+```{r}
+fisherXY(mydata$race,mydata$eatout,printAll=TRUE,confL = 0.99)
+```   
+
+We observe that the critical p-value was situated in the context of the relationship between the black and white races. We displayed all the p-values associated with the various combinations, and this reveals that the sole distinction is found within the "black" and "white" factors.   
+
 
 
 
